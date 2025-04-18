@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P5.js Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="language-selector">
+                <button id="lang-zh" class="lang-btn">中文</button>
+                <button id="lang-en" class="lang-btn">English</button>
+                <button id="lang-es" class="lang-btn">Español</button>
+            </div>
+            <div id="popup-text" class="popup-text">
+                <!-- 文本内容将通过JavaScript动态填充 -->
+            </div>
+            <button id="close-popup" class="close-btn">开始体验</button>
+        </div>
+    </div>
+    <script src="modal.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>

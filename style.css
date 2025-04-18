@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* 弹窗样式 */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border: 3px solid #EE1C25; /* 中国红 */
+}
+
+.language-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.lang-btn {
+    background-color: #EE1C25; /* 中国红 */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.lang-btn:hover, .lang-btn.active {
+    background-color: #75AADB; /* 阿根廷蓝 */
+}
+
+.popup-text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.popup-text h2 {
+    color: #EE1C25; /* 中国红 */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.close-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #FCBF49; /* 阿根廷国旗太阳色 */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.close-btn:hover {
+    background-color: #FFFF00; /* 中国黄 */
+}
+
+/* 移动设备适配 */
+@media (max-width: 600px) {
+    .popup-content {
+        padding: 15px;
+        width: 85%;
+    }
+    
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .close-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
